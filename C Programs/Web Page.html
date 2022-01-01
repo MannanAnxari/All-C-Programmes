@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Assistant', sans-serif;
+            color: white;
+            background: url('bg.jpg');
+            height: 100%;
+            width: 100%;
+        }
+        .header::before{
+            height: 100%;
+            width: 100%;
+        }
+
+        .left {
+            position: absolute;
+            left: 5px;
+            top: -25px;
+        }
+
+        .left img {
+            width: 160px;
+        }
+
+        .center {
+            display: block;
+            width: 44%;
+            padding: 1px 1px;
+            margin: 25px auto;
+
+        }
+
+        .right {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: inline-block;
+
+        }
+
+        .nav li {
+            display: inline-block;
+
+        }
+
+        .nav li a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 15px;
+            margin: 0px auto;
+            font-size: 20px;
+        }
+
+        .nav li a:hover,
+        .nav li a.active {
+            color: rgb(200 202 222 / 66%);
+        }
+
+        .btn {
+            font-family: 'Barlow', sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            padding: 4px 16px;
+            margin: 5px auto;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 2px solid white;
+            display: block;
+        }
+
+        .btn:hover {
+            background-color: rgba(210, 222, 255, 0.137);
+        }
+
+        .cont .btn1:hover {
+            background-color: rgba(210, 222, 255, 0.137);
+        }
+
+        .cont {
+            border-bottom: 3px solid #2698df;
+            border-right: 3px solid #2698df;
+            border-top: 3px solid #8b2efff2;
+            border-left: 3px solid #8b2efff2;
+            padding: 20px 61px;
+            margin: 74px 47px;
+            width: 30%;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .Form-group input {
+            text-align: center;
+            padding: 0px 6px;
+            margin: 6px auto;
+            display: block;
+            width: 310px;
+            font-size: 16px;
+            border-color: 2px solid black;
+        }
+
+        .Form-group1 input {
+            text-align: center;
+            padding: 0px 6px;
+            margin: 6px auto;
+            display: block;
+            width: 310px;
+            font-size: 16px;
+            border-top-left-radius: 20px;
+        }
+
+        .Form-group2 input {
+            text-align: center;
+            padding: 0px 6px;
+            margin: 6px auto;
+            display: block;
+            width: 310px;
+            font-size: 16px;
+        }
+
+        .cont .btn1 {
+            font-family: 'Barlow', sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            margin: 5px auto;
+            border-bottom-right-radius: 20px;
+            cursor: pointer;
+            border: 2px solid white;
+            display: block;
+            width: 325px;
+        }
+
+        .cont h1 {
+            text-align: center;
+            font-size: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="center">
+            <ul class="nav">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact US</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email US</button>
+        </div>
+    </header>
+    <div class="cont">
+        <h1>Apply For Programmer</h1>
+        <form action="noaction.php">
+
+            <div class="Form-group1">
+                <input type="text" placeholder="First Name">
+            </div>
+            <div class="Form-group">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <div class="Form-group">
+                <input type="text" placeholder="Email Address">
+            </div>
+            <div class="Form-group2">
+                <input type="text" placeholder="Phone Number">
+            </div>
+            <div class="Form-group2">
+                <input type="text" placeholder="Locality">
+            </div>
+            <div class="Form-group2">
+                <input type="text" placeholder="Gender">
+            </div>
+
+            <button class="btn1">Submit</button>
+
+            <br><br>
+        </form>
+    </div>
+</body>
+
+</html>
